@@ -23,6 +23,13 @@ int main()
 	Sprite s_start(start);
 	s_start.setPosition(0, 0);
 	Clock clock;
+
+	Font font;
+	font.loadFromFile("Fonts/BK0010.ttf");
+	Text info("", font, 64);
+	info.setFillColor(Color::Blue);
+	info.setString("Test texta");
+
 	float CurrentFrame{};
 	while (window.isOpen())
 	{
@@ -36,15 +43,20 @@ int main()
 		{
 
 			if (event.type == Event::Closed)
-
 				window.close();
-
 		}
+		info.setPosition(20, 50);
+
+		
+
 		window.setView(hero.GetView());
 		window.clear();
+		window.draw(hero.GetSprite());
 		hero.Move(time);
+		
 		hero.update(time);
 
+		
 		for (int i = 0; i < HEIGHT_MAP; ++i)
 		{
 			for (int j = 0; j <WIDTH_MAP; ++j)
@@ -68,12 +80,13 @@ int main()
 
 		
 
-		
 		window.draw(s_start);
+		window.draw(info);
 		window.draw(hero.GetSprite());
 		window.display();
 
 	}
+
 
 	return 0;
 

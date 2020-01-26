@@ -64,8 +64,9 @@ void Hero::Move(float time)
 	{
 		dir = right_dir;
 		speed = 0.1;
-
+		
 		current_frame += 0.005*time;
+		
 		current_frame = (current_frame > 3) ? current_frame - 3 : current_frame;//Checking out for the 3rd frame of the animation
 
 		sprite.setTextureRect(IntRect(0 + ((int)current_frame * 49), 96, 37, 44)); //setting texture from tile
@@ -77,6 +78,7 @@ void Hero::Move(float time)
 		speed = 0.1;
 
 		current_frame += 0.005*time;
+		
 		current_frame = (current_frame > 3) ? current_frame - 3 : current_frame;//Checking out for the 3rd frame of the animation
 
 		sprite.setTextureRect(IntRect(0 + ((int)current_frame * 49), 145, 37, 41));//setting texture from tile
@@ -88,6 +90,7 @@ void Hero::Move(float time)
 		speed = 0.1;
 
 		current_frame += 0.005*time;
+
 		current_frame = (current_frame > 3) ? current_frame - 3 : current_frame;//Checking out for the 3rd frame of the animation
 
 		sprite.setTextureRect(IntRect(0 + ((int)current_frame * 49), 0, 37, 44));//setting texture from tile
