@@ -8,3 +8,5 @@ GameObject::GameObject(String file, float x, float y, float xSprite, float ySpri
 	sprite.setTexture(texture);
 	sprite.setTextureRect(IntRect(this->xSprite, this->ySprite, height, width));
 }
+
+

@@ -2,12 +2,15 @@
 #include "Windows.h"
 #include "Map.h"
 
+
+
+
 int main()
 {
-
-	RenderWindow window(VideoMode(800, 600), "xGame");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "xGame");
+	
 	//window.setFramerateLimit(60);
-
+	
 	Hero hero("hero.png", 20, 50, 0, 0, 37, 44);
 
 	Image map_image;
@@ -28,7 +31,7 @@ int main()
 	font.loadFromFile("Fonts/BK0010.ttf");
 	Text info("", font, 64);
 	info.setFillColor(Color::Blue);
-	info.setString("Test texta");
+	info.setString("The game is in development...");
 
 	float CurrentFrame{};
 	while (window.isOpen())

@@ -15,6 +15,6 @@ protected:
 	Sprite sprite; //sfml sprite
 public:
 	GameObject(String file, float x, float y, float xSprite, float ySprite, float h, float w);
-	//virtual ~GameObject()=0;
+	virtual void Draw() { cout << "Class GameObject draw"<<endl; };
 };
 
