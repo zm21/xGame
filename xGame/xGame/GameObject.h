@@ -6,8 +6,8 @@ using namespace sf;
 class GameObject
 {
 protected:
-	float x;
-	float y;
+	float x; // position X of the game object
+	float y; // position Y of the game object
 	float xSprite, ySprite, height, width; //start points of the rectangle, its width and height
 	String file; //file name
 	Image image; //sfml image file

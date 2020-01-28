@@ -27,6 +27,6 @@ public:
 	{
 		cout << "This update from class Units" << endl;
 	}
-	float GetCoordinateX() { return x; }
-	float GetCoordinateY() { return y; }
+	float GetCoordinateX() { return x; } //Get X position of unit
+	float GetCoordinateY() { return y; } //Get Y position of unit
 };
