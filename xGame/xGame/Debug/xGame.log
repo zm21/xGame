@@ -1,4 +1,17 @@
-﻿  Source.cpp
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\source.cpp(39): warning C4244: 'initializing': conversion from 'sf::Int64' to 'float', possible loss of data
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\source.cpp(79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  Menu.cpp
+d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\menu.cpp(23): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\menu.cpp(24): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\menu.cpp(25): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
   xGame.vcxproj -> D:\Mikola\ШАГ\2-й семестр\Kyrsova\beta\xGame\Debug\xGame.exe
