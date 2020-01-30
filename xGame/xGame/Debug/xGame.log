@@ -1,4 +1,3 @@
-﻿  Hero.cpp
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\hero.cpp(56): warning C4305: 'initializing': truncation from 'double' to 'float'
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\hero.cpp(57): warning C4305: 'initializing': truncation from 'double' to 'float'
+﻿  Source.cpp
+d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\source.cpp(9): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   xGame.vcxproj -> D:\Mikola\ШАГ\2-й семестр\Kyrsova\beta\xGame\Debug\xGame.exe
