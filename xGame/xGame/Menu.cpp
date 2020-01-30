@@ -6,11 +6,16 @@ Menu::Menu(String file_p, float xSprite_p, float ySprite_p, float height_p, floa
 	play(file_p, xSprite_p, ySprite_p, height_p, width_p), //ctor of button play
 	about_game(file_a, xSprite_a, ySprite_a, height_a, width_a), //ctor of button  about of game
 	exit_game(file_e, xSprite_e, ySprite_e, height_e, width_e), //ctor of button exit of game
-	menu(file_bg_m), ab_info(file_bg_ab), open(false) {} //ctor's of background
+	menu_bg(file_bg_m), ab_info(file_bg_ab), open(false) {} //ctor's of background
 
 void Menu::ShowMenu(RenderWindow & window)
 {
+	Music bg_music;
+	bg_music.openFromFile("audio/background_music.ogg");
+	bg_music.play();
+	bg_music.setLoop(true);
 	int action{};
+	window.clear();
 	open = true; //status of menu
 	while (window.isOpen() && open)
 	{
@@ -47,7 +52,7 @@ void Menu::ShowMenu(RenderWindow & window)
 			}
 
 		}
-		window.draw(menu.GetSprite());
+		window.draw(menu_bg.GetSprite());
 		window.draw(play.GetSprite());
 		window.draw(about_game.GetSprite());
 		window.draw(exit_game.GetSprite());
@@ -62,4 +67,5 @@ void Menu::ShowMenu(RenderWindow & window)
 				window.close();
 		}
 	}
+	bg_music.stop();
 }

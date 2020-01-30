@@ -1,17 +1,4 @@
-﻿  Menu.cpp
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\menu.cpp(24): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-          with
-          [
-              T=int
-          ]
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\menu.cpp(25): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-          with
-          [
-              T=int
-          ]
-d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\menu.cpp(26): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-          with
-          [
-              T=int
-          ]
+﻿  Hero.cpp
+d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\hero.cpp(56): warning C4305: 'initializing': truncation from 'double' to 'float'
+d:\mikola\шаг\2-й семестр\kyrsova\beta\xgame\xgame\hero.cpp(57): warning C4305: 'initializing': truncation from 'double' to 'float'
   xGame.vcxproj -> D:\Mikola\ШАГ\2-й семестр\Kyrsova\beta\xGame\Debug\xGame.exe

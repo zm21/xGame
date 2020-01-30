@@ -7,6 +7,7 @@ GameObject::GameObject(String file, float x, float y, float xSprite, float ySpri
 	texture.loadFromImage(image);
 	sprite.setTexture(texture);
 	sprite.setTextureRect(IntRect(this->xSprite, this->ySprite, height, width));
+	sprite.setPosition(x, y);
 }
 
 

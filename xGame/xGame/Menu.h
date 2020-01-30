@@ -1,12 +1,13 @@
 #pragma once
 #include "Button.h"
 #include "Backgroung.h"
+#include <SFML/Audio.hpp>
 class Menu
 {
 	Button play;
 	Button about_game;
 	Button exit_game;
-	Backgroung menu;
+	Backgroung menu_bg;
 	Backgroung ab_info; //about game info screen
 	bool open;
 public:

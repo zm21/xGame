@@ -16,5 +16,9 @@ protected:
 public:
 	GameObject(String file, float x, float y, float xSprite, float ySprite, float h, float w);
 	virtual void Draw() { cout << "Class GameObject draw"<<endl; };
+	void SetXSprite(float xSprite) { this->xSprite = xSprite; }
+	void SetYSprite(float ySprite) { this->ySprite = ySprite; }
+	void SetHeight(float height) { this->height = height; }
+	void SetWidth(float width) { this->ySprite = width; }
 };
 

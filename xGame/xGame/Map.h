@@ -1,34 +1,31 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <vector>
+#include "Bush.h"
+#include <algorithm>
+#include <string>
 
-const int HEIGHT_MAP = 25;
-const int WIDTH_MAP = 40;
-sf::String TileMap[HEIGHT_MAP] =
+
+using namespace sf;
+class Map 
 {
-	"0000000000000000000000000000000000000000",
-	"0                     s                0",
-	"0   s                                  0",
-	"0                                s     0",
-	"0                     s                0",
-	"0          s                           0",
-	"0         sss              s           0",
-	"0                                      0",
-	"0                                      0",
-	"0           s                          0",
-	"0                                      0",
-	"0                                      0",
-	"0                     s                0",
-	"0                                      0",
-	"0                                      0",
-	"0                                      0",
-	"0                                      0",
-	"0                                      0",
-	"0      s                               0",
-	"0     s                                0",
-	"0     s                                0",
-	"0                                s     0",
-	"0                    s                 0",
-	"0                                      0",
-	"0000000000000000000000000000000000000000",
+public:
+	enum Content
+	{
+		empty_=' ', bush_='b'
+	};
+private:
+	std::vector<string> tile_map;
+	std::vector<Bush> bushes;
+	String file_bush;
+	int count;
+	int size;
+public:
+	Map(String file_bush);
+	void InitMap();
+	void InitBushes();
+	void DrawBushes(RenderWindow &window);
+	void CheckCollisionWithoObject(float hero_tempX, float hero_tempY, float & hero_x, float & hero_y, float dx, float dy);
+	bool CheckHeroOnBush(float x, float y);
 };
 

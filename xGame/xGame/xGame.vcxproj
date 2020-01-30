@@ -133,25 +133,27 @@
   <ItemGroup>
     <ClCompile Include="Backgroung.cpp" />
     <ClCompile Include="Bush.cpp" />
+    <ClCompile Include="BushAllert.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Grass.cpp" />
     <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Prop.cpp" />
+    <ClCompile Include="Play.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Units.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Backgroung.h" />
+    <ClInclude Include="Border.h" />
     <ClInclude Include="Bush.h" />
+    <ClInclude Include="BushAllert.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Grass.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="Prop.h" />
+    <ClInclude Include="Play.h" />
     <ClInclude Include="Units.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
